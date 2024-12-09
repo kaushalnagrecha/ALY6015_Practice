@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_febc8e44233627a338a9f9a3c30817e0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_febc8e44233627a338a9f9a3c30817e0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_febc8e44233627a338a9f9a3c30817e0 = L.map(
+                "map_febc8e44233627a338a9f9a3c30817e0",
+                {
+                    center: [42.32201008151064, -71.08344631865191],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b3a8ea5b3d3fb13584899db3391edac4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b3a8ea5b3d3fb13584899db3391edac4.addTo(map_febc8e44233627a338a9f9a3c30817e0);
+        
+    
+            var circle_marker_3f9e63256f7e734e131d1eb456496e40 = L.circleMarker(
+                [42.35007500383117, -71.14407229365537],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_febc8e44233627a338a9f9a3c30817e0);
+        
+    
+            circle_marker_3f9e63256f7e734e131d1eb456496e40.bindTooltip(
+                `<div>
+                     Brighton: Downward trend, Common crime: Motor Vehicle Accident Response
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7e7dcc4add1cb3f61d8efb377976f8c3 = L.circleMarker(
+                [42.300205472675295, -71.06307554919545],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_febc8e44233627a338a9f9a3c30817e0);
+        
+    
+            circle_marker_7e7dcc4add1cb3f61d8efb377976f8c3.bindTooltip(
+                `<div>
+                     Dorchester: Downward trend, Common crime: Motor Vehicle Accident Response
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_09ad7a71c6cdab8b729fd2505f7ea848 = L.circleMarker(
+                [42.360559751218474, -71.06128940504111],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_febc8e44233627a338a9f9a3c30817e0);
+        
+    
+            circle_marker_09ad7a71c6cdab8b729fd2505f7ea848.bindTooltip(
+                `<div>
+                     Downtown & Charlestown: Downward trend, Common crime: Larceny
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_621faaef940a3d2fa6339eb39f447c71 = L.circleMarker(
+                [42.3764998573877, -71.03151527559312],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_febc8e44233627a338a9f9a3c30817e0);
+        
+    
+            circle_marker_621faaef940a3d2fa6339eb39f447c71.bindTooltip(
+                `<div>
+                     East Boston: Downward trend, Common crime: Motor Vehicle Accident Response
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_caba7d663d5e130c6466cdc3df7f02d3 = L.circleMarker(
+                [42.32481050964279, -71.08369368312495],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_febc8e44233627a338a9f9a3c30817e0);
+        
+    
+            circle_marker_caba7d663d5e130c6466cdc3df7f02d3.bindTooltip(
+                `<div>
+                     External: Upward trend, Common crime: []
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6bfdb79e8746e54d2ff0ada09ea676c2 = L.circleMarker(
+                [42.261801463234725, -71.11919409098587],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_febc8e44233627a338a9f9a3c30817e0);
+        
+    
+            circle_marker_6bfdb79e8746e54d2ff0ada09ea676c2.bindTooltip(
+                `<div>
+                     Hyde Park: Downward trend, Common crime: Motor Vehicle Accident Response
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c15bc883209796d71a6145c63ac11b59 = L.circleMarker(
+                [42.31364921217309, -71.1059310915193],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_febc8e44233627a338a9f9a3c30817e0);
+        
+    
+            circle_marker_c15bc883209796d71a6145c63ac11b59.bindTooltip(
+                `<div>
+                     Jamaica Plain: Downward trend, Common crime: Motor Vehicle Accident Response
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5a99b105be0f802ec1b33793392b569f = L.circleMarker(
+                [42.286835846358464, -71.08605042503284],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_febc8e44233627a338a9f9a3c30817e0);
+        
+    
+            circle_marker_5a99b105be0f802ec1b33793392b569f.bindTooltip(
+                `<div>
+                     Mattapan: Downward trend, Common crime: Motor Vehicle Accident Response
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_49194a22bc34cf9a577fd9ae179bd24d = L.circleMarker(
+                [42.32079268295569, -71.0822299089861],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_febc8e44233627a338a9f9a3c30817e0);
+        
+    
+            circle_marker_49194a22bc34cf9a577fd9ae179bd24d.bindTooltip(
+                `<div>
+                     Roxbury: Downward trend, Common crime: Motor Vehicle Accident Response
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_88fb6e9e9efc41e9e08b2c2758263103 = L.circleMarker(
+                [42.33424900396496, -71.05356624662767],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_febc8e44233627a338a9f9a3c30817e0);
+        
+    
+            circle_marker_88fb6e9e9efc41e9e08b2c2758263103.bindTooltip(
+                `<div>
+                     South Boston: Downward trend, Common crime: Motor Vehicle Accident Response
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9c85abba9686e4b45e2ef67a9e4c2ff0 = L.circleMarker(
+                [42.342947321630156, -71.07918488972194],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_febc8e44233627a338a9f9a3c30817e0);
+        
+    
+            circle_marker_9c85abba9686e4b45e2ef67a9e4c2ff0.bindTooltip(
+                `<div>
+                     South End: Downward trend, Common crime: Larceny
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c23c0edb51e5a1772f7510db7ff7ab1b = L.circleMarker(
+                [42.28264279418715, -71.14265673829183],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_febc8e44233627a338a9f9a3c30817e0);
+        
+    
+            circle_marker_c23c0edb51e5a1772f7510db7ff7ab1b.bindTooltip(
+                `<div>
+                     West Roxbury: Downward trend, Common crime: Motor Vehicle Accident Response
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
